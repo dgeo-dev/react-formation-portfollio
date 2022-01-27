@@ -1,0 +1,21 @@
+.skills h4,
+.skills p {
+  margin: 0 0 0.3rem 0;
+}
+
+.skills li {
+  background-color: #F5F5F5;
+  border-left: 3px solid rgb(91, 107, 120);
+  padding: .9rem 2rem;
+}
+
+.skills .progressbar {
+  background: #F5F5F5;
+  color: #FFF;
+  margin-bottom: 1rem;
+}
+
+.skills .bar {
+  background: #5b6c78;
+  padding: 1rem;
+}

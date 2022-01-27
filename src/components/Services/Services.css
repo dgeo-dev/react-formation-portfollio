@@ -1,0 +1,47 @@
+.services {
+  background: #F5F5F5;
+}
+
+.service__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  border: 2px solid #5b6c78;
+  border-radius: 50%;
+}
+
+.service__icon svg,
+.service__icon .icon {
+  height: 35px;
+}
+
+.service__content {
+  flex: 1;
+}
+
+.service h3 {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width:749px) {
+  .service {
+    text-align: center;
+  }
+
+  .service__icon {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width:750px) {
+  .service {
+    display: flex;
+    align-items: center;
+  }
+
+  .service__icon {
+    margin-right: 2rem;
+  }
+}

@@ -1,0 +1,11 @@
+.socials {
+  display: flex;
+}
+
+.socials a {
+  padding: 0 2px;
+}
+
+.socials svg {
+  height: 18px;
+}
