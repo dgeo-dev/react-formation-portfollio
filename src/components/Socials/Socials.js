@@ -3,7 +3,7 @@ import "./Socials.css"
 
 function Socials() {
   return (
-    <div className="right">
+    <>
       <ul className="socials list-unstyled">
         <li>
           <a href="https://google.fr" target="_blank" rel="noreferrer" >
@@ -50,8 +50,8 @@ function Socials() {
           </a>
         </li>
       </ul>
-      <button className="burger"><span className="bar"></span></button>
-    </div>
+     
+    </>
   )
 }
 

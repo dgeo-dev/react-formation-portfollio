@@ -10,6 +10,8 @@ import IconSync from '../../icons/icon-sync.svg';
 import IconTools from '../../icons/icon-tools.svg';
 import IconUser from '../../icons/icon-user.svg';
 
+import SyncOutlinedIcon from '@mui/icons-material/SyncOutlined';
+
 function Services() {
   return (
     <section id="services" className="services">
@@ -22,6 +24,8 @@ function Services() {
         </div>
         <div className="grid">
           <div className="grid__item">
+
+            
 
             <Service title="GESTION DE PROJETS WEB" text="Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           Molestiae vero sed similique" icon={IconLightbulb} />
@@ -42,7 +46,9 @@ function Services() {
           Molestiae vero sed similique" icon={IconPencil} />
 
             <Service title="DYNAMISME DES PAGES" text="Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Molestiae vero sed similique" icon={IconSync} />
+          Molestiae vero sed similique" icon={IconSync}>
+            <SyncOutlinedIcon  />
+            </Service>
 
             <Service title="INTERFACE D'ADMINISTRATION" text="Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           Molestiae vero sed similique" icon={IconUser} />

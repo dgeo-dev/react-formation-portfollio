@@ -1,7 +1,11 @@
 import React from 'react';
-import './Portfolio.css';
+import './Portfolios.css';
+import Portfolio from'./Portfolio';
+import data from'../../data/portfolios/data';
 
-function Portolio() {
+function Portfolios() {
+
+  console.log(data)
   return (
     <section id="portfolio" className="portfolio">
       <div className="container">
@@ -11,6 +15,7 @@ function Portolio() {
             similique placeat doloremque cupiditate, ut vero autem officia repellat explicabo, doloribus vel? Culpa, fuga
             quod!</p>
         </div>
+
         <ul className="grid portfolio-filters list-unstyled">
           <li className="grid__item">
             <a href="#" className="active" data-filter="all">Tous les projets</a>
@@ -25,7 +30,15 @@ function Portolio() {
             <a href="#" data-filter="app">Applications</a>
           </li>
         </ul>
+
+        {data.map(portfolio => (
+          <Portfolio key={portfolio.id} id={portfolio.id} categorySlug={portfolio.category_slug} /> 
+        ))}
+
         <div className="grid">
+
+        
+        
           <div className="grid__item">
             <div className="card" data-category="web">
               <img src="https://picsum.photos/600/400?random=1" loading="lazy" width="365" height="243"
@@ -501,4 +514,4 @@ function Portolio() {
   );
 }
 
-export default Portolio;
+export default Portfolios;
