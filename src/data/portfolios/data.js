@@ -4,7 +4,7 @@ const Data = [
     featured_image: "https://picsum.photos/600/400?random=1",
     // featured_image: "../../images/person.jpg",
     images: ["https://picsum.photos/600/400?random=10","https://picsum.photos/600/400?random=11"],
-    category_slug: "web",
+    category_slug: ["all","web"],
     category: "Developpement Web",
     title: "Titre 1",
     body: {
@@ -16,7 +16,7 @@ const Data = [
     id: 1,
     featured_image: "https://picsum.photos/600/400?random=2",
     images: ["https://picsum.photos/600/400?random=10","https://picsum.photos/600/400?random=11"],
-    category_slug: "design",
+    category_slug: ["all","design"],
     category: "Refonte graphique",
     title: "Titre 2",
     body: {
@@ -28,7 +28,7 @@ const Data = [
     id: 2,
     featured_image: "https://picsum.photos/600/400?random=3",
     images: ["https://picsum.photos/600/400?random=10","https://picsum.photos/600/400?random=11"],
-    category_slug: "app",
+    category_slug: ["all","app"],
     category: "Application",
     title: "Titre 3",
     body: {
@@ -40,7 +40,7 @@ const Data = [
     id: 3,
     featured_image: "https://picsum.photos/600/400?random=4",
     images: ["https://picsum.photos/600/400?random=10","https://picsum.photos/600/400?random=11"],
-    category_slug: "web",
+    category_slug: ["all","web"],
     category: "Developpement Web",
     title: "Titre 4",
     body: {
@@ -52,7 +52,7 @@ const Data = [
     id: 4,
     featured_image: "https://picsum.photos/600/400?random=5",
     images: ["https://picsum.photos/600/400?random=10","https://picsum.photos/600/400?random=11"],
-    category_slug: "design",
+    category_slug: ["all","design"],
     category: "Refonte graphique",
     title: "Titre 5",
     body: {
@@ -64,7 +64,7 @@ const Data = [
     id: 5,
     images: ["https://picsum.photos/600/400?random=10","https://picsum.photos/600/400?random=11"],
     featured_image: "https://picsum.photos/600/400?random=6",
-    category_slug: "app",
+    category_slug: ["all","app"],
     category: "Application",
     title: "Titre 6",
     body: {

@@ -22,16 +22,20 @@
   margin-bottom: 0;
 }
 
-.portfolio-filters a {
+.portfolio-filters button {
   color: var(--color-body);
   background: #EEE;
   display: flex;
   flex: 1;
   justify-content: center;
   padding: 1rem;
+
+  border:none;
+  width: 100%;
+  cursor:pointer;
 }
 
-.portfolio-filters a.active {
+.portfolio-filters button.active {
   color: #FFF;
   background: #5b6c78;
 }
@@ -160,6 +164,7 @@
   width:100%;
   background: none;
   cursor:pointer;
+  border:none;
 }
 
 .card:hover .card__overlay {

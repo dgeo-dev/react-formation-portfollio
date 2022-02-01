@@ -25,8 +25,6 @@ function Services() {
         <div className="grid">
           <div className="grid__item">
 
-            
-
             <Service title="GESTION DE PROJETS WEB" text="Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           Molestiae vero sed similique" icon={IconLightbulb} />
 

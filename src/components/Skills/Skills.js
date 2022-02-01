@@ -1,5 +1,7 @@
 import React from 'react';
 import './Skills.css';
+import Skill from './Skill';
+import ProgressBar from './ProgressBar';
 
 function Skills() {
   return (
@@ -15,69 +17,34 @@ function Skills() {
           <div className="grid__item">
             <h3>Domaines de compétences</h3>
             <ul className="list-unstyled">
-              <li>
-                <h4>Compétence</h4>
-                <p>Description de la compétence</p>
-              </li>
-              <li>
-                <h4>Compétence</h4>
-                <p>Description de la compétence</p>
-              </li>
-              <li>
-                <h4>Compétence</h4>
-                <p>Description de la compétence</p>
-              </li>
-              <li>
-                <h4>Compétence</h4>
-                <p>Description de la compétence</p>
-              </li>
-              <li>
-                <h4>Compétence</h4>
-                <p>Description de la compétence</p>
-              </li>
-              <li>
-                <h4>Compétence</h4>
-                <p>Description de la compétence</p>
-              </li>
-              <li>
-                <h4>Compétence</h4>
-                <p>Description de la compétence</p>
-              </li>
+              <Skill skill="Domaine de compétence"/>
+              <Skill skill="Domaine de compétence"/>
+              <Skill skill="Domaine de compétence"/>
+              <Skill skill="Domaine de compétence"/>
+              <Skill skill="Domaine de compétence"/>
+              <Skill skill="Domaine de compétence"/>
+              <Skill skill="Domaine de compétence"/>
+              <Skill skill="Domaine de compétence"/>
             </ul>
           </div>
           <div className="grid__item">
+
             <h3>Compétences en développement</h3>
-            <div className="progressbar">
-              <div className="bar" data-width="95">HTML</div>
-            </div>
-            <div className="progressbar">
-              <div className="bar" data-width="90">CSS</div>
-            </div>
-            <div className="progressbar">
-              <div className="bar" data-width="85">JAVASCRIPT</div>
-            </div>
-            <div className="progressbar">
-              <div className="bar" data-width="90">PHP</div>
-            </div>
-            <div className="progressbar">
-              <div className="bar" data-width="85">NODE</div>
-            </div>
-            <div className="progressbar">
-              <div className="bar" data-width="75">REACT</div>
-            </div>
+
+            <ProgressBar skill="HTML" lvl="95" />
+            <ProgressBar skill="CSS" lvl="90" />
+            <ProgressBar skill="JAVASCRIPT" lvl="85" />
+            <ProgressBar skill="PHP" lvl="90" />
+            <ProgressBar skill="NODE" lvl="85" />
+            <ProgressBar skill="REACT" lvl="75" />
+            
             <h3>Compétences en conception graphique</h3>
-            <div className="progressbar">
-              <div className="bar" data-width="90">PHOTOSHOP</div>
-            </div>
-            <div className="progressbar">
-              <div className="bar" data-width="80">ILLUSTRATOR</div>
-            </div>
-            <div className="progressbar">
-              <div className="bar" data-width="75">FIGMA</div>
-            </div>
-            <div className="progressbar">
-              <div className="bar" data-width="65">AFTER EFFECT</div>
-            </div>
+
+            <ProgressBar skill="PHOTOSHOP" lvl="90" />
+            <ProgressBar skill="ILLUSTRATOR" lvl="80" />
+            <ProgressBar skill="FIGMA" lvl="75" />
+            <ProgressBar skill="AFTER EFFECT" lvl="65" />
+            
           </div>
         </div>
       </div>
