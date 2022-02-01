@@ -1,9 +1,13 @@
 import React from 'react';
+
 import './Skills.css';
 import Skill from './Skill';
 import ProgressBar from './ProgressBar';
 
+
 function Skills() {
+ 
+
   return (
     <section id="skills" className="skills">
       <div className="container">
@@ -16,8 +20,9 @@ function Skills() {
         <div className="grid">
           <div className="grid__item">
             <h3>Domaines de compétences</h3>
+            
             <ul className="list-unstyled">
-              <Skill skill="Domaine de compétence"/>
+              <Skill skill="Domaine de compétence" />
               <Skill skill="Domaine de compétence"/>
               <Skill skill="Domaine de compétence"/>
               <Skill skill="Domaine de compétence"/>
@@ -30,6 +35,8 @@ function Skills() {
           <div className="grid__item">
 
             <h3>Compétences en développement</h3>
+
+          
 
             <ProgressBar skill="HTML" lvl="95" />
             <ProgressBar skill="CSS" lvl="90" />
@@ -44,6 +51,8 @@ function Skills() {
             <ProgressBar skill="ILLUSTRATOR" lvl="80" />
             <ProgressBar skill="FIGMA" lvl="75" />
             <ProgressBar skill="AFTER EFFECT" lvl="65" />
+
+         
             
           </div>
         </div>

@@ -13,9 +13,35 @@
   background: #F5F5F5;
   color: #FFF;
   margin-bottom: 1rem;
+  overflow: hidden;
 }
 
 .skills .bar {
+  
   background: #5b6c78;
   padding: 1rem;
+  transition: all 2s;
+  width: 0;
+}
+
+.skills .bar-size-95 {
+  width:95%;
+}
+.skills .bar-size-90 {
+  width:90%;
+}
+.skills .bar-size-85 {
+  width:85%;
+}
+.skills .bar-size-80 {
+  width:80%;
+}
+.skills .bar-size-75 {
+  width:75%;
+}
+.skills .bar-size-70 {
+  width:70%;
+}
+.skills .bar-size-65 {
+  width:65%;
 }
