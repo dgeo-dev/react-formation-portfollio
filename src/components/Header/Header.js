@@ -24,7 +24,7 @@ function Header() {
     <header className={`header ${openMenu ? "show-nav" : "hide-nav"}`}>
       <div className="container d-flex">
         <div className="logo">
-          John Doe
+          <a href="/">John Doe</a>
         </div>
         <Navbar />
         <div className="right">

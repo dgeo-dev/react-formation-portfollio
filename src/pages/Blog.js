@@ -1,9 +1,26 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 import './Blog.css';
+import { Link } from "react-router-dom";
+import {Helmet} from "react-helmet";
+import data from'../data/posts/data';
+
 
 function Blog() {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    setPosts(data);
+  }, []);
+
   return (
+    
     <main className="blog">
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Le Blog</title>
+      <meta name="description" content="Description du blog" />
+    </Helmet>
     <div className="container">
       <h1>Blog</h1>
       <div className="section-header">
@@ -14,60 +31,18 @@ function Blog() {
       </div>
 
       <div className="d-grid">
-        <div className="d-grid__item article__card">
-          <img src="https://picsum.photos/600/400?random=1" width="600" height="400" alt="" className="article__img" />
-          <h3 className="article__title">Titre de l'article</h3>
-          <p className="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio non nam quibusdam
-            soluta excepturi harum,
-            quasi blanditiis cumque voluptate at quos
-          </p>
-          <a href="./article-1.html" className="article__link stretched-link">Lire la suite</a>
-        </div>
-        <div className="d-grid__item article__card">
-          <img src="https://picsum.photos/600/400?random=2" width="600" height="400" alt="" className="article__img" />
-          <h3 className="article__title">Titre de l'article</h3>
-          <p className="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio non nam quibusdam
-            soluta excepturi harum,
-            quasi blanditiis cumque voluptate at quos
-          </p>
-          <a href="./article-1.html" className="article__link stretched-link">Lire la suite</a>
-        </div>
-        <div className="d-grid__item article__card">
-          <img src="https://picsum.photos/600/400?random=3" width="600" height="400" alt="" className="article__img" />
-          <h3 className="article__title">Titre de l'article</h3>
-          <p className="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio non nam quibusdam
-            soluta excepturi harum,
-            quasi blanditiis cumque voluptate at quos
-          </p>
-          <a href="./article-1.html" className="article__link stretched-link">Lire la suite</a>
-        </div>
-        <div className="d-grid__item article__card">
-          <img src="https://picsum.photos/600/400?random=4" width="600" height="400" alt="" className="article__img" />
-          <h3 className="article__title">Titre de l'article</h3>
-          <p className="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio non nam quibusdam
-            soluta excepturi harum,
-            quasi blanditiis cumque voluptate at quos
-          </p>
-          <a href="./article-1.html" className="article__link stretched-link">Lire la suite</a>
-        </div>
-        <div className="d-grid__item article__card">
-          <img src="https://picsum.photos/600/400?random=5" width="600" height="400" alt="" className="article__img" />
-          <h3 className="article__title">Titre de l'article</h3>
-          <p className="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio non nam quibusdam
-            soluta excepturi harum,
-            quasi blanditiis cumque voluptate at quos
-          </p>
-          <a href="./article-1.html" className="article__link stretched-link">Lire la suite</a>
-        </div>
-        <div className="d-grid__item article__card">
-          <img src="https://picsum.photos/600/400?random=6" width="600" height="400" alt="" className="article__img" />
-          <h3 className="article__title">Titre de l'article</h3>
-          <p className="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio non nam quibusdam
-            soluta excepturi harum,
-            quasi blanditiis cumque voluptate at quos
-          </p>
-          <a href="./article-1.html" className="article__link stretched-link">Lire la suite</a>
-        </div>
+
+
+        {posts.map(post => (
+          <div className="d-grid__item article__card">
+            <img src={post.featured_image} width="600" height="400" alt="" className="article__img" />
+            <h3 className="article__title">{post.title}</h3>
+            <p className="article__text">{post.text}
+            </p>
+            <Link to={post.slug} className="article__link stretched-link">Lire la suite</Link>
+          </div>
+        )).reverse()}  
+        
       </div>
     </div>
   </main>);

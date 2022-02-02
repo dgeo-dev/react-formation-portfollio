@@ -3,7 +3,7 @@ import { useInView } from 'react-intersection-observer';
 
 function ProgressBar({ skill, lvl }) {
 
-  const { ref, inView, entry } = useInView({
+  const { ref, inView } = useInView({
     /* Optional options */
     threshold: 0,
     triggerOnce:true

@@ -7,7 +7,7 @@ function Navbar() {
     <nav className="navbar ">
       <ul className="menu list-unstyled">
          
-        <li><a href="/#hero">Accueil</a></li>
+        <li><a href="/">Accueil</a></li>
         <li><a href="/#about">A propos</a></li>
         <li><a href="/#services">Services</a></li>
         <li><a href="/#skills">Compétences</a></li>
