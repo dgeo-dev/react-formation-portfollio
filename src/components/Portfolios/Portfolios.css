@@ -170,3 +170,9 @@
 .card:hover .card__overlay {
   top: 0;
 }
+
+.info {
+  display: flex;
+  align-items: center;
+  gap:.6rem;
+}

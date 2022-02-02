@@ -45,7 +45,7 @@ function Portfolio({ data }) {
               </div>
               <div className="grid__item">
                 <h4 className="modal__title h2">{title}</h4>
-                <p>
+                <p className="info">
                   <svg width="15" height="15" aria-hidden="true" focusable="false" data-prefix="far"
                     data-icon="calendar" className="svg-inline--fa fa-calendar fa-w-14" role="img"
                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -55,7 +55,7 @@ function Portfolio({ data }) {
                   </svg>
                   <i>Année : {date}</i>
                 </p>
-                <p className="category">
+                <p className="info category">
                   <svg width="15" height="15" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tag"
                     className="svg-inline--fa fa-tag fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512">
