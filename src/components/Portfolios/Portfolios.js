@@ -29,7 +29,7 @@ function Portfolios() {
       console.log(error);
     })
   }, [filter]);
-  */
+  */ 
 
   useEffect(() => {   
     const filtered = data.map(p => ({ ...p, filtered: p.category_slug.includes(filter) }));
