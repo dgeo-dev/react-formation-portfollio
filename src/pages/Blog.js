@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import {Helmet} from "react-helmet";
 import data from'../data/posts/data';
 
-
 function Blog() {
   const [posts, setPosts] = useState([]);
 

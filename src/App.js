@@ -5,6 +5,10 @@ import Blog from './pages/Blog';
 import Article from './pages/Article';
 import Header from './components/Header';
 import Footer from './components/Footer';
+
+/* Node Part */
+import CreatePortfolio from './pages/admin/CreatePortfolio';
+
 import { 
   BrowserRouter,
   Routes,
@@ -20,6 +24,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:id" element={<Article />} />
+        {/* Node Part */}
+        <Route path="/admin/CreatePortfolio" element={<CreatePortfolio />} />
         <Route
           path="*"
           element={

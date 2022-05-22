@@ -1,0 +1,17 @@
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+.edit-form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.6rem;
+}
+.edit-form input {
+  padding: .5rem;
+}
+
+.edit-form input[type="submit"] {
+  align-self: flex-start;
+}
